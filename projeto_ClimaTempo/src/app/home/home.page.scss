@@ -1,41 +1,31 @@
-#header {
-  display: flex;
-  align-items: center;
+ion-toolbar {
+  --background: #fff;
+
+  --border-style: none;
 }
 
-#nomeApp {
-  padding: 0px 64px;
-  display: flex;
+ion-header {
+  padding: 12px 24px;
+
+  ion-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    color: #2677b1;
+    font-weight: 700;
+    span {
+    color: #777;
+    font-weight: 300;
+    }
+  }
 }
 
-#nomeBold {
-  color: #2677b1;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-#nomeLight {
-  text-align: center;
-
-  margin-left: 0px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
+.icon{
   color: #1a1c1f;
 }
 
-#menuBurguer {
-  width: 24px;
-  margin-left: 24px;
-  display: flex;
-  color: #1a1c1f;
-}
-
-#searchBtn {
-  width: 24px;
-  margin-right: 24px;
-  display: flex;
-  color: #1a1c1f;
+ion-segment-button{
+  padding: 3px 0;
+  --indicator-color:#2677b1;
+  --color-checked: #fff;
+  --background-checked: #2677b1;
 }

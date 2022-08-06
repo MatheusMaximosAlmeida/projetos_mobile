@@ -1,35 +1,25 @@
-<!--Aqui fica o container do header-->
-<div id="header">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon class="icon" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
 
-  <!--Aqui fica o ícone do menu burguer-->
-  <div id="menuBurguer">
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-      <path fillRule="evenodd"
-        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
-        clipRule="evenodd" />
-    </svg>
-  </div>
+    <ion-title class="ion-text-center">Clima<span>Tempo</span></ion-title>
 
-  <!--Aqui fica o nome do aplicativo-->
-  <div id="nomeApp">
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon class="icon" name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
-    <!--Aqui fica o nome do aplicativo é divido em dois para que se possa fazer de acordo com o design-->
-    <div id="nomeBold">
-      <p>Clima</p>
-    </div>
-
-    <div id="nomeLight">
-      <p>Tempo</p>
-    </div>
-  </div>
-
-  <!--Aqui fica o botão de pesquisa-->
-  <div id="searchBtn">
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-      <path fillRule="evenodd"
-        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-        clipRule="evenodd" />
-    </svg>
-  </div>
-</div>
-<!--Fim do container header-->
+<ion-content class="ion-padding">
+  <ion-segment value="today">
+    <ion-segment-button value="today">Hoje</ion-segment-button>
+    <ion-segment-button value="tomorrow">Amanhã</ion-segment-button>
+    <ion-segment-button value="nextDays">15 dias</ion-segment-button>
+  </ion-segment>
+</ion-content>
