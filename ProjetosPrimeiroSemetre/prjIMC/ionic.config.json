@@ -1,0 +1,7 @@
+{
+  "name": "prjIMC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

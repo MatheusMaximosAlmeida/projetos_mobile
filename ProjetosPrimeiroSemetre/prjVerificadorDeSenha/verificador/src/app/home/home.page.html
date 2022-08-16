@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center mt-3">
+    <div class="col-10">
+     <h1 class="text-start">Verificador de senha</h1>
+     <p class="text-start">Insira uma senha e diremos se sua senha está forte ou não.</p>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center mt-3">
+    <div class="col-10">
+      <label for="senha" class="form-label fw-bold">Senha</label>
+      <input (keyup)="verificarSenha()" type="password" class="form-control is-valid" id="senha" [(ngModel)]="senha">
+      <div class="valid-feedback">{{ frases[pontuacao] }}</div>
+      <p class="text-center mt-3">Pontuação {{pontuacao}}</p>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center mt-3">
+    <div class="col-10">
+      <p class="text-start fs-6 fw-bold">Sua senha deve ter no minímo</p>
+      <p class="text-start">Uma letra maiuscula e uma minuscula</p>
+      <p class="text-start">Um número</p>
+      <p class="text-start">Mais de 8 caracteres</p> 
+    </div>
+  </div>
+
+  
+
+ 
+</div>
