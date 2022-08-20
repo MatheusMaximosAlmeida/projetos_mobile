@@ -1,3 +1,7 @@
+*{
+  font-family: "montserrat", "sans-serif";
+}
+
 ion-toolbar {
   --background: #fff;
 
@@ -8,7 +12,6 @@ ion-header {
   padding: 12px 24px;
 
   ion-title {
-    font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     color: #2677b1;
     font-weight: 700;
@@ -30,10 +33,10 @@ ion-segment-button {
   --background-checked: #2677b1;
 }
 
-ion-content{
- --padding-start: 32px;
- --padding-end: 32px;
- --padding-top: 24px;
+ion-content {
+  --padding-start: 32px;
+  --padding-end: 32px;
+  --padding-top: 24px;
 }
 
 #home {
@@ -52,54 +55,102 @@ ion-content{
   border-radius: 22px;
 }
 
-main{
-margin-top : 36px;
-padding: 36px;
-background: linear-gradient(to bottom, #6ad7ef, #6672d8);
-border-radius: 16px;
-font-family: 'montserrat', 'sans-serif';
-color: #fff;
+main {
+  margin-top: 36px;
+  padding: 36px;
+  background: linear-gradient(to bottom, #6ad7ef, #6672d8);
+  border-radius: 16px;
+  color: #fff;
 }
 
-.localização{
+.localização {
   display: flex;
   align-items: center;
-  justify-content: center ;
+  justify-content: center;
   margin-left: -44px;
-img{
-  margin-right: 12px;
-  width: 32px;
-  height: 32px;;
-}
-}
-
-.minmax{
- display: flex;
- align-items: center;
- font-weight: 500;
- ion-icon{
-  margin-right: 4px;
-  width: 16px;
-  height: 16px;
- }
- .max{
-  color: #ed7e17;
- }
-
- .min{
-  color: #3d5a74; 
-  margin-left: 12px;
- }
-}
-
-.temperatura{
- font-size: 96px;
- font-weight: 600;
-}
-
-  .imagem-tempo{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    right: -10px;
+  img {
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
   }
+}
+
+.minmax {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  ion-icon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+  }
+  .max {
+    color: #ed7e17;
+  }
+
+  .min {
+    color: #3d5a74;
+    margin-left: 12px;
+  }
+}
+
+.temperatura {
+  font-size: 96px;
+  font-weight: 600;
+}
+
+.imagem-tempo {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  right: -10px;
+}
+
+.info-adicional{
+ margin-top: 36px ;
+ border: 1px solid #2a12de;
+ border-radius: 24px;
+ padding: 12px;
+ display: flex;
+}
+
+.info{
+  width: 100vw;
+  text-align: center;
+  img{
+    width: 32px;
+
+  }
+}
+
+.borda-separacao{
+  border-right: 1px solid #2677b1;
+}
+
+.fw-300{
+  font-weight: 300;
+}
+.fw-500{
+  font-weight: 500;
+}
+
+h2{
+  font-weight: 600;
+  margin-top: 64px;
+}
+
+.proximas-horas{
+  display: flex;
+}
+
+.hora{
+  border: 1px solid #2677b1;
+  border-radius: 12px;
+  text-align:center;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+
+  img{
+    width: 8px;
+  }
+}
