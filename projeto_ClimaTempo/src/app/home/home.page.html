@@ -26,18 +26,18 @@
   <main>
     <div class="localização">
       <img src="https://cdn-icons-png.flaticon.com/512/856/856258.png" alt="" />
-      <p>Itapeva-SP</p>
+      <p>{{results.city}}</p>
     </div>
     <div class="imagem-tempo">
       <img src="./../../assets/climaIcon.png" alt="" />
     </div>
     <div class="minmax">
       <ion-icon name="arrow-up-outline" class="max"></ion-icon>
-      <div>37º</div>
+      <div>{{results.forecast[0].max}}</div>
       <ion-icon name="arrow-down-outline" class="min"></ion-icon>
-      <div>22º</div>
+      <div>{{results.forecast[0].min}}</div>
     </div>
-    <div class="temperatura">32º</div>
+    <div class="temperatura">{{results.temp}}</div>
   </main>
 
   <div class="info-adicional">
@@ -47,7 +47,7 @@
         alt=""
       />
       <div class="fw-300">vento</div>
-      <div class="fw-500">12 Km/h</div>
+      <div class="fw-500">{{results.wind_speedy}}</div>
     </div>
 
     <div class="info borda-separacao">
@@ -56,7 +56,7 @@
         alt=""
       />
       <div class="fw-300">umidade</div>
-      <div class="fw-500">10%</div>
+      <div class="fw-500">{{results.humidity}}</div>
     </div>
 
     <div class="info">
