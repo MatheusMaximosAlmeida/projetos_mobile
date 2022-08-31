@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Results } from '../class/results';
 import { Forecast } from '../class/forecast';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
