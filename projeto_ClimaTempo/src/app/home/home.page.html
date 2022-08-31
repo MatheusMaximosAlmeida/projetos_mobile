@@ -2,21 +2,19 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button>
-        <ion-icon class="icon" name="menu-outline"></ion-icon>
+        <ion-icon name="menu-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
-
     <ion-title class="ion-text-center">Clima<span>Tempo</span></ion-title>
-
     <ion-buttons slot="end">
       <ion-button>
-        <ion-icon class="icon" name="search-outline"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content>
   <ion-segment value="today">
     <ion-segment-button value="today">Hoje</ion-segment-button>
     <ion-segment-button value="tomorrow">Amanhã</ion-segment-button>
@@ -24,88 +22,68 @@
   </ion-segment>
 
   <main>
-    <div class="localização">
-      <img src="https://cdn-icons-png.flaticon.com/512/856/856258.png" alt="" />
-      <p>Itapeva-SP</p>
+    <div class="cidade">
+      <img src="https://cdn-icons-png.flaticon.com/512/1239/1239242.png" alt="">
+      <h4>{{result.city}}</h4>
     </div>
     <div class="imagem-tempo">
-      <img src="./../../assets/climaIcon.png" alt="" />
+      <img src="./../../assets/sun.png" alt="">
     </div>
-    <div class="minmax">
+    <div class="maxmin">
       <ion-icon name="arrow-up-outline" class="max"></ion-icon>
-      <div>37º</div>
+      <div>{{result.forecast[0].max}}º</div>
       <ion-icon name="arrow-down-outline" class="min"></ion-icon>
-      <div>22º</div>
+      <div>{{result.forecast[0].min}}º</div>
     </div>
-    <div class="temperatura">32º</div>
+    <div class="temperatura">{{result.temp}}º</div>
   </main>
 
   <div class="info-adicional">
-    <div class="info borda-separacao">
+    <div class="info borda-direita">
       <img
-        src="https://cdn-icons-png.flaticon.com/512/1247/1247774.png?w=740&t=st=1660957093~exp=1660957693~hmac=c00a882fba874ec3d94aa71fb0b07bde7daa85929e06e91cf2c3ef5398e76dcd"
-        alt=""
-      />
-      <div class="fw-300">vento</div>
-      <div class="fw-500">12 Km/h</div>
+        src="https://cdn-icons-png.flaticon.com/512/1255/1255693.png?w=826&t=st=1660948804~exp=1660949404~hmac=ad0910e12c75b06438f3fcee4088642c95177df4b3d5141646923bd2155f7a38"
+        alt="">
+      <div class="info-tag">Vento</div>
+      <div class="info-resultado">{{result.wind_speedy}}</div>
     </div>
-
-    <div class="info borda-separacao">
+    <div class="info borda-direita">
       <img
-        src="https://cdn-icons-png.flaticon.com/512/1164/1164899.png?w=740&t=st=1660957182~exp=1660957782~hmac=f915ef3de04e2126cc40f51386de257856a1335b967456d544b172bdf30cbdc7"
-        alt=""
-      />
-      <div class="fw-300">umidade</div>
-      <div class="fw-500">10%</div>
+        src="https://cdn-icons-png.flaticon.com/512/728/728093.png?w=826&t=st=1660948842~exp=1660949442~hmac=3b63cf051ea369d853e98512f0a0319203ae08d74a566de073bf28571909488b"
+        alt="">
+      <div class="info-tag">Umidade</div>
+      <div class="info-resultado">{{result.humidity}}%</div>
     </div>
-
     <div class="info">
       <img
-        src="https://cdn-icons-png.flaticon.com/512/1247/1247121.png?w=740&t=st=1660957204~exp=1660957804~hmac=91bdc8e1afb2f6b3b2a45d3fa3c71a8dd8347e25ad5205659b6a0833bc5367a2"
-        alt=""
-      />
-      <div class="fw-300">Chuva</div>
-      <div class="fw-500">20%</div>
+        src="https://cdn-icons-png.flaticon.com/512/1244/1244050.png?w=826&t=st=1660948866~exp=1660949466~hmac=b618a8d761cbdc2e1480cf49106cc26b9510c84c126f07561d7ccf458388f0d4"
+        alt="">
+      <div class="info-tag">Chuva</div>
+      <div class="info-resultado">20%</div>
     </div>
   </div>
 
-  <div><h2>Proximas horas</h2></div>
+  <h2>Próximas horas</h2>
 
   <div class="proximas-horas">
-    <div class="horas">
+    <div class="hora">
       <div>12:00</div>
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/1238/1238153.png?w=740&t=st=1660958717~exp=1660959317~hmac=f6ebb96199c8c051da2fb50c34a53537067fde6482fae88fdcfccf65c18eacc8"
-        alt=""
-      />
-      <div>-5º</div>
+      <img src="../../assets/sun.png" alt="">
+      <div>30º</div>
     </div>
-
-    <div class="horas">
+    <div class="hora">
       <div>12:00</div>
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/1238/1238153.png?w=740&t=st=1660958717~exp=1660959317~hmac=f6ebb96199c8c051da2fb50c34a53537067fde6482fae88fdcfccf65c18eacc8"
-        alt=""
-      />
-      <div>-5º</div>
+      <img src="../../assets/sun.png" alt="">
+      <div>30º</div>
     </div>
-    
-    <div class="horas">
+    <div class="hora">
       <div>12:00</div>
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/1238/1238153.png?w=740&t=st=1660958717~exp=1660959317~hmac=f6ebb96199c8c051da2fb50c34a53537067fde6482fae88fdcfccf65c18eacc8"
-        alt=""
-      />
-      <div>-5º</div>
+      <img src="../../assets/sun.png" alt="">
+      <div>30º</div>
     </div>
-
-    <div class="horas">
+    <div class="hora">
       <div>12:00</div>
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/1238/1238153.png?w=740&t=st=1660958717~exp=1660959317~hmac=f6ebb96199c8c051da2fb50c34a53537067fde6482fae88fdcfccf65c18eacc8"
-        alt=""
-      />
-      <div>-5º</div>
+      <img src="../../assets/sun.png" alt="">
+      <div>30º</div>
     </div>
   </div>
 </ion-content>
