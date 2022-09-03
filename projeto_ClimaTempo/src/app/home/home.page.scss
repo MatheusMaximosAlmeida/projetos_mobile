@@ -1,69 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-ion-toolbar{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ion-toolbar {
   --background: #fff;
   --border-style: none;
 }
-ion-header{
+ion-header {
   padding: 12px 24px;
-  ion-title{
-    font-family: 'Montserrat', sans-serif;
+  ion-title {
+    font-family: "Montserrat", sans-serif;
     color: #3e4bb3;
     font-size: 1.5rem;
     font-weight: 700;
-    span{
+    span {
       color: #aaa;
       font-weight: 300;
     }
   }
 }
 
-ion-segment-button{
+ion-segment-button {
   --indicator-color: #b1b8f7;
   padding: 3px 0;
 }
 
-ion-content{
+ion-content {
   --padding-top: 24px;
   --padding-start: 30px;
   --padding-end: 30px;
 }
 
-main{
+main {
   background: linear-gradient(to bottom, #6ad7ef, #6672d8);
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 24px;
   margin-top: 36px;
   border-radius: 24px;
-  .cidade{
+  .cidade {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: -36px;
-    img{
+    img {
       width: 24px;
       height: 24px;
       margin-right: 12px;
     }
   }
-  .maxmin{
+  .maxmin {
     display: flex;
     align-items: center;
     font-weight: 500;
-    ion-icon{
+    ion-icon {
       font-size: 12px;
       margin-right: 3px;
       margin-left: 12px;
     }
-    .max{ color: #ED7E17; }
-    .min{ color: #2D5A74; }
+    .max {
+      color: #ed7e17;
+    }
+    .min {
+      color: #2d5a74;
+    }
   }
-  .temperatura{
+  .temperatura {
     margin-left: 12px;
     font-weight: 600;
     font-size: 76px;
   }
-  .imagem-tempo{
+  .imagem-tempo {
     position: absolute;
     right: -10px;
     width: 130px;
@@ -71,7 +75,7 @@ main{
   }
 }
 
-.info-adicional{
+.info-adicional {
   border: 1px solid skyblue;
   border-radius: 24px;
   display: flex;
@@ -79,45 +83,61 @@ main{
   margin-top: 36px;
 }
 
-.borda-direita{
+.borda-direita {
   border-right: 1px solid skyblue;
 }
 
-.info{
+.info {
   text-align: center;
   width: 100%;
-  img{
+  img {
     width: 34px;
   }
 }
 
-.info-tag{
-  color:#555;
+.info-tag {
+  color: #555;
   margin-top: 4px;
 }
 
-.info-resultado{
+.info-resultado {
   font-weight: 600;
 }
 
-h2{
+h2 {
   font-weight: 700;
   margin-top: 64px;
 }
 
-.proximas-horas{
+.proximas-horas {
   display: flex;
   justify-content: space-around;
 }
 
-.hora{
+.hora {
   border: 1px solid skyblue;
   border-radius: 12px;
   padding: 6px 12px;
   margin: 12px;
   text-align: center;
-  img{
+  img {
     width: 30px;
     margin: 4px;
+  }
+}
+
+.previsao {
+  display: flex;
+  align-items: center;
+  .max {
+    color: #ed7e17;
+  }
+
+  .min {
+    color: #2d5a74;
+  }
+  ion-icon {
+    width: 16px;
+    margin-right: 4px;
   }
 }

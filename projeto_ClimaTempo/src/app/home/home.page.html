@@ -27,7 +27,7 @@
       <h4>{{result.city}}</h4>
     </div>
     <div class="imagem-tempo">
-      <img src="./../../assets/sun.png" alt="">
+      <img src="./../../assets/{{result.condition_code}}.png" alt="">
     </div>
     <div class="maxmin">
       <ion-icon name="arrow-up-outline" class="max"></ion-icon>
@@ -55,35 +55,30 @@
     </div>
     <div class="info">
       <img
-        src="https://cdn-icons-png.flaticon.com/512/1244/1244050.png?w=826&t=st=1660948866~exp=1660949466~hmac=b618a8d761cbdc2e1480cf49106cc26b9510c84c126f07561d7ccf458388f0d4"
+        src="https://cdn-icons-png.flaticon.com/512/1247/1247786.png?w=740&t=st=1662165230~exp=1662165830~hmac=593e0e577a54176ef72d4e2645e8c4602a294ca35128c08806bc78f8d9019f6f"
         alt="">
-      <div class="info-tag">Chuva</div>
-      <div class="info-resultado">20%</div>
+      <div class="info-tag">{{result.sunrise}}</div>
+      <div class="info-resultado">{{result.sunset}}</div>
     </div>
   </div>
 
-  <h2>Próximas horas</h2>
+  <h2>Próximos dias</h2>
 
   <div class="proximas-horas">
-    <div class="hora">
-      <div>12:00</div>
-      <img src="../../assets/sun.png" alt="">
-      <div>30º</div>
-    </div>
-    <div class="hora">
-      <div>12:00</div>
-      <img src="../../assets/sun.png" alt="">
-      <div>30º</div>
-    </div>
-    <div class="hora">
-      <div>12:00</div>
-      <img src="../../assets/sun.png" alt="">
-      <div>30º</div>
-    </div>
-    <div class="hora">
-      <div>12:00</div>
-      <img src="../../assets/sun.png" alt="">
-      <div>30º</div>
+    <div class="hora" *ngFor="let i of [1, 2, 3, 4]">
+      <div>{{result.forecast[i].date}}</div>
+      <img src="../../assets/{{result.forecast[i].condition}}.png" alt="">
+
+      <div class="previsao">
+        <ion-icon name="arrow-up-outline" class="max"></ion-icon>
+        {{result.forecast[i].max}}º
+      </div>
+
+      <div class="previsao">
+        <ion-icon name="arrow-down-outline" class="min"></ion-icon>
+        {{result.forecast[i].min}}º
+      </div>
+
     </div>
   </div>
 </ion-content>
