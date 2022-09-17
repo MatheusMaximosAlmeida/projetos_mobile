@@ -1,0 +1,42 @@
+  ion-content{
+    --padding-start:32px;
+    --padding-end:32px
+    --padding-top:32px
+  }
+
+  h1{
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  h3{
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .icone{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    ion-icon{
+      font-size: 32px;
+    }
+  }
+
+  ion-button{
+    position: absolute;
+    bottom: 32px;
+    width: calc(100% - 64px);
+  }
+
+
+
+  #resposta{
+    --border-radius: 16px;
+     text-align: center;
+    h1{
+      margin-bottom: 18px;
+    }
+
+  }
+

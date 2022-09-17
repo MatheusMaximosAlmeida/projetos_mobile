@@ -1,0 +1,7 @@
+{
+  "name": "vai-dar-namoro-tb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
