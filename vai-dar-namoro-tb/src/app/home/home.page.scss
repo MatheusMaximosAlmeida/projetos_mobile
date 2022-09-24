@@ -1,42 +1,99 @@
-  ion-content{
-    --padding-start:32px;
-    --padding-end:32px
-    --padding-top:32px
-  }
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-  h1{
-    font-weight: 700;
-    font-size: 24px;
-  }
+    *{
+      font-family: 'Manrope';
+    }
 
-  h3{
-    font-weight: 500;
-    font-size: 16px;
-  }
 
-  .icone{
-    display: flex;
-    justify-content: center;
-    margin-top: 32px;
-    ion-icon{
+    ion-content {
+      --background: linear-gradient(180deg, #BC0ED6 0%, #830A9D 50.52%, #480455 100%);
+      --padding-start: 32px;
+      --padding-end: 32px;
+      --padding-top: 32px;
+    }
+
+   .titleSub{
+     margin-bottom: 40px;
+   }
+
+    .title{
       font-size: 32px;
-    }
-  }
-
-  ion-button{
-    position: absolute;
-    bottom: 32px;
-    width: calc(100% - 64px);
-  }
-
-
-
-  #resposta{
-    --border-radius: 16px;
-     text-align: center;
-    h1{
-      margin-bottom: 18px;
+      color: #fff;
     }
 
-  }
+    .subtitle{
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+      margin-top: 8px;
+    }
 
+    label{
+      display: flex;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 24px;
+      margin-bottom:8px
+    }
+
+    .primeiro{
+      display: flex;
+      border-style: none;
+      padding:9px;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+
+    h1 {
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .icone {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+
+      ion-icon {
+        font-size: 32px;
+      }
+    }
+
+    ion-button {
+      position: absolute;
+      bottom: 32px;
+      width: calc(100% - 64px);
+    }
+
+    #resposta {
+      --border-radius: 16px;
+      text-align: center;
+
+      h1 {
+        margin-bottom: 18px;
+      }
+
+    }
+
+    .switch{
+      margin-bottom: 40px;
+      margin-top:40px;
+
+    }
+
+    ion-segment{
+      --background:#fff;
+    }
+
+    ion-segment-button{
+      --indicator-color:#480455;
+      --color-checked:#fff;
+      --background-checked:#480455;
+    }

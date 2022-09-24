@@ -1,20 +1,41 @@
 <ion-content>
-  <h1> Vai dar namoro</h1>
-  <h3>Vamos ver se ele(a) goxxxxxxta?</h3>
-  
-  
-  <ion-item class="ion-no-padding">
-    <ion-label position="floating">Primeiro nome</ion-label>
-    <ion-input [(ngModel)]="nome1"type="text"></ion-input>
-  </ion-item>
-  <div class="icone"><ion-icon name="add"></ion-icon></div>
+  <div class="titleSub">
+    <h1 class="title"> Olá!</h1>
+    <p class="subtitle">Vamos ver se ela(e) é sua alma gemêa?</p>
+  </div>
 
-  <ion-item class="ion-no-padding">
-    <ion-label position="floating">Segundo nome</ion-label>
-    <ion-input [(ngModel)]="nome2" type="text"></ion-input>
-  </ion-item>
 
-  <ion-button (click)="calcular()" id="open-resposta"expand="full" color="danger">Calcular</ion-button>
+  <div class="switch">
+    <ion-segment value="Masculino">
+      <Ion-segment-button value="Masculino">Masculino</Ion-segment-button>
+      <Ion-segment-button vlaue="Feminino">Feminino</Ion-segment-button>
+    </ion-segment>
+  </div>
+
+
+  <div class="primeiroNome">
+    <label for="primeiro">Primeiro nome</label>
+    <input [(ngModel)]="nome1" class="primeiro" type="text">
+
+    <label for="primeiro">Sua idade</label>
+    <input class="primeiro" type="text">
+  </div>
+
+
+
+
+  <div class="primeiroNome">
+    <label for="primeiro">Segundo nome</label>
+    <input [(ngModel)]="nome2" class="primeiro" type="text">
+
+    <label for="primeiro">Idade do parceiro</label>
+    <input class="primeiro" type="text">
+  </div>
+
+
+
+
+  <ion-button (click)="calcular()" id="open-resposta" expand="full">Calcular</ion-button>
 
   <ion-modal id="resposta" #modal trigger="open-resposta" [initialBreakpoint]="0.40">
     <ng-template>
