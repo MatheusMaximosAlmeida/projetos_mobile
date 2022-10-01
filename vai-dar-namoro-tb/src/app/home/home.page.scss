@@ -67,9 +67,14 @@
     }
 
     ion-button {
+      --border-radius: 8px;
+      --background: #fff;
+      --color: #830A9D;
       position: absolute;
+      --font-size:700;
       bottom: 32px;
       width: calc(100% - 64px);
+      
     }
 
     #resposta {
