@@ -23,11 +23,14 @@
 
   <main>
     <div class="cidade">
-      <img src="https://cdn-icons-png.flaticon.com/512/1239/1239242.png" alt="">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1239/1239242.png"
+        alt=""
+      />
       <h4>{{result.city}}</h4>
     </div>
     <div class="imagem-tempo">
-      <img src="./../../assets/{{result.condition_code}}.png" alt="">
+      <img src="./../../assets/{{result.condition_code}}.png" alt="" />
     </div>
     <div class="maxmin">
       <ion-icon name="arrow-up-outline" class="max"></ion-icon>
@@ -42,21 +45,24 @@
     <div class="info borda-direita">
       <img
         src="https://cdn-icons-png.flaticon.com/512/1255/1255693.png?w=826&t=st=1660948804~exp=1660949404~hmac=ad0910e12c75b06438f3fcee4088642c95177df4b3d5141646923bd2155f7a38"
-        alt="">
+        alt=""
+      />
       <div class="info-tag">Vento</div>
       <div class="info-resultado">{{result.wind_speedy}}</div>
     </div>
     <div class="info borda-direita">
       <img
         src="https://cdn-icons-png.flaticon.com/512/728/728093.png?w=826&t=st=1660948842~exp=1660949442~hmac=3b63cf051ea369d853e98512f0a0319203ae08d74a566de073bf28571909488b"
-        alt="">
+        alt=""
+      />
       <div class="info-tag">Umidade</div>
       <div class="info-resultado">{{result.humidity}}%</div>
     </div>
     <div class="info">
       <img
         src="https://cdn-icons-png.flaticon.com/512/1247/1247786.png?w=740&t=st=1662165230~exp=1662165830~hmac=593e0e577a54176ef72d4e2645e8c4602a294ca35128c08806bc78f8d9019f6f"
-        alt="">
+        alt=""
+      />
       <div class="info-tag">{{result.sunrise}}</div>
       <div class="info-resultado">{{result.sunset}}</div>
     </div>
@@ -67,7 +73,7 @@
   <div class="proximas-horas">
     <div class="hora" *ngFor="let i of [1, 2, 3, 4]">
       <div>{{result.forecast[i].date}}</div>
-      <img src="../../assets/{{result.forecast[i].condition}}.png" alt="">
+      <img src="../../assets/{{result.forecast[i].condition}}.png" alt="" />
 
       <div class="previsao">
         <ion-icon name="arrow-up-outline" class="max"></ion-icon>
@@ -78,7 +84,6 @@
         <ion-icon name="arrow-down-outline" class="min"></ion-icon>
         {{result.forecast[i].min}}º
       </div>
-
     </div>
   </div>
 </ion-content>
