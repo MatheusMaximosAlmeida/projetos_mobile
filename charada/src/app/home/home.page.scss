@@ -1,0 +1,28 @@
+*{
+  font-family: sans-serif;
+}
+
+.pergunta{
+  margin: 24px 16px;
+  font-weight: 700;
+  color: #1a1c1f;
+}
+
+#openResposta{
+  margin: 24px 16px;
+  border-radius: 24px;
+  --background: #7e0fda;
+}
+
+#textoResposta{
+  display: flex;
+  text-align: center;
+  color: #1a1c1f;
+  padding: 24px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#refresh{
+  --background:#1a1c1f;
+}
