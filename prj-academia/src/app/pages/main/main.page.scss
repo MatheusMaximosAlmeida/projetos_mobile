@@ -50,3 +50,25 @@
     --border-radius: 12px;
     --box-shadow: 0;
 }
+
+ion-list{
+    margin-top: 24px;
+}
+
+ion-item{
+    margin-top: 8px;
+    border: 2px #72747C solid;
+    border-radius: 8px;
+}
+
+.textAtividade{
+    width: 100%;
+}
+
+.number{
+    display: flex;
+    width: 48px;
+    border: 2px #1C1D21 solid;
+    border-radius: 4px;
+    text-align: center;
+}
